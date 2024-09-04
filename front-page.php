@@ -1,0 +1,3 @@
+<?PHP
+get_header();
+?>

@@ -24,6 +24,7 @@ function quechuas_travel_register_assets() {
     wp_enqueue_style('quechuas_travel-font-awesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css', array(), '5.15.3');
     wp_enqueue_style('quechuas_travel-jquery-ui-css', 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css', array(), '1.12.1');
     wp_enqueue_style('quechuas_travel-owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', array(), '2.3.4');
+    wp_enqueue_style('quechuas_travel-owl-carousel-theme-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', array(), '2.3.4'); // Tema por defecto para OwlCarousel
     wp_enqueue_style('quechuas_travel-fancybox-css', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', array(), '3.5.7');
     wp_enqueue_style('quechuas_travel-simple-line-icons-css', 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css', array(), '2.5.5');
 
@@ -41,9 +42,11 @@ function quechuas_travel_register_assets() {
     wp_enqueue_script('quechuas_travel-owl-carousel-js', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array('jquery'), '2.3.4', true);
     wp_enqueue_script('quechuas_travel-wow-js', 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', array(), '1.1.2', true);
     wp_enqueue_script('quechuas_travel-fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', array('jquery'), '3.5.7', true);
+    wp_enqueue_script('quechuas_travel-bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), '4.5.2', true);
 
     // Encolar script personalizado (JavaScript) local
     wp_enqueue_script('quechuas_travel-custom-script', get_template_directory_uri() . '/assets/js/custom-script.js', array('jquery'), $version, true);
 }
 add_action('wp_enqueue_scripts', 'quechuas_travel_register_assets');
+
 ?>

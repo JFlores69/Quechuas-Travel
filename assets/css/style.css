@@ -12469,3 +12469,26 @@ body.visible-cart-bar{
 .ui-datepicker td span, .ui-datepicker td a{
 	text-align:center;
 }
+
+.custom-checklist {
+  list-style-type: none; /* Elimina los estilos de lista por defecto (cuadros, números, etc.) */
+  padding-left: 0; /* Elimina el padding por defecto en la lista */
+}
+
+.custom-checklist li {
+  position: relative; /* Para manejar la posición de los íconos de check */
+  padding-left: 30px; /* Ajusta el espacio a la izquierda para los íconos */
+}
+
+.custom-checklist li::before {
+  content: none; /* Anula cualquier otro pseudo-elemento que añada cuadros o símbolos */
+}
+
+.custom-checklist li i.fas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #28a745; /* Color del ícono de check */
+
+}
+
